@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Змінюємо колір при наведенні */
+}
+
+.product img {
+    max-width: 100%; /* Зображення відповідатиме розміру батьківського блоку */
+    max-height: 150px; /* Зменшити висоту до 150px (змініть на власний розмір) */
+    display: block; /* Важливо, для правильного відображення зображення */
+    margin: 0 auto; /* Центрувати зображення по горизонталі */
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Збільшуємо розмір при наведенні */
+}
+
+.product img {
+    max-width: 100%;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.add-to-cart:hover {
+    background-color: #ff4400; /* Змінюємо колір кнопки при наведенні */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.cart-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 32px; /* Ширина значка */
+    height: 32px; /* Висота значка */
+    cursor: pointer;
+    z-index: 999;
+}
+
+.cart-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* або object-fit: cover; в залежності від потреб вашого дизайну */
+}
