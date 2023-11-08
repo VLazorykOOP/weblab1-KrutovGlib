@@ -11,28 +11,7 @@ header {
     padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
 
-nav li {
-    margin: 0 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ff5733; /* Змінюємо колір при наведенні */
-}
 
 .product img {
     max-width: 100%; /* Зображення відповідатиме розміру батьківського блоку */
@@ -69,22 +48,6 @@ main {
 h2 {
     margin: 10px 0;
 }
-
-.add-to-cart {
-    background-color: #ff5733;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    
-}
-
-.add-to-cart:hover {
-    background-color: #ff4400; /* Змінюємо колір кнопки при наведенні */
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -106,5 +69,107 @@ footer {
 .cart-icon img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* або object-fit: cover; в залежності від потреб вашого дизайну */
+    object-fit: cover; /* або object-fit: cover; в залежності від потреб вашого дизайну */
+}
+
+
+/* Спочатку приховуємо випадаючий список */
+.submenu-content {
+    display: none;
+}
+.submenu{
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Стилізуємо випадаючий список та посилання на сторінки */
+/* .submenu:hover .submenu-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    max-width: 100px;
+    padding: 0%;
+    white-space: nowrap; /* Запобігає переносу тексту 
+    word-wrap: normal;  Запобігає переносу тексту на наступний рядок */
+/* 
+    width: 50px; 
+    background-color: #9c9191;
+    border: 1px solid #ccc; 
+    
+}
+
+.submenu-content li {
+    list-style: none;
+    padding: 3px;
+   
+}
+
+.submenu-content a {
+    text-decoration: none;
+    color: #1d1b1b;
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 16px;
+
+}
+
+/* Додатковий стиль для посилань на сторінки при наведенні 
+.submenu-content a:hover {
+    color: #fa0707;
+} 
+*/
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Змінюємо колір при наведенні */
+}
+.submenu{
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.submenu:hover{
+    color: #ff5733; 
+}
+
+
+nav ul li ul li a:hover{
+color: #000;
+background-color: #fff;
+}
+
+nav ul li ul{
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+nav ul li:hover > ul{
+    display: initial;
 }
