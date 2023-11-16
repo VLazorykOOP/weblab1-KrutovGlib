@@ -82,47 +82,9 @@ footer {
     color: #fff;
 }
 
-/* Стилізуємо випадаючий список та посилання на сторінки */
-/* .submenu:hover .submenu-content {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    max-width: 100px;
-    padding: 0%;
-    white-space: nowrap; /* Запобігає переносу тексту 
-    word-wrap: normal;  Запобігає переносу тексту на наступний рядок */
-/* 
-    width: 50px; 
-    background-color: #9c9191;
-    border: 1px solid #ccc; 
-    
-}
-
-.submenu-content li {
-    list-style: none;
-    padding: 3px;
-   
-}
-
-.submenu-content a {
-    text-decoration: none;
-    color: #1d1b1b;
-    font-size: 16px;
-    display: block;
-    padding: 5px;
-    white-space: nowrap;
-    font-size: 16px;
-
-}
-
-/* Додатковий стиль для посилань на сторінки при наведенні 
-.submenu-content a:hover {
-    color: #fa0707;
-} 
-*/
 
 nav ul {
+    
     list-style: none;
     background-color: #333;
     display: flex;
@@ -172,4 +134,10 @@ nav ul li ul li{
 
 nav ul li:hover > ul{
     display: initial;
+}
+thead{
+    background-color: aquamarine;
+}
+tbody{
+    background-color:aqua;
 }

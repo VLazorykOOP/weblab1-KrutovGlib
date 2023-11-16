@@ -6,14 +6,7 @@ header {
     padding: 20px;
 }
 
-/* .centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:50vh;
-    text-align: center;
-} */
+
 
 .list {
     padding-top: 0%;
@@ -41,7 +34,6 @@ ul li a {
 
 ul li a:hover {
     cursor: pointer;
-    /* text-decoration: underline; */
     color: rgb(11, 56, 88);
     transform: scale(1.1);
 }
