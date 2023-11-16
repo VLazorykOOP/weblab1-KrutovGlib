@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba 6</title>
+</head>
+<body>
+    <svg width="600" height="600">
+        <line x1="100" y1="300" x2="450" y2="300" stroke="black" stroke-width="2"></line>
+        <line x1="100" y1="0" x2="100" y2="450" stroke="black" stroke-width="2"></line>
+            <text x="90" y="310" fill="black">0</text>
+            <text x="450" y="310" fill="black">Х</text>
+            <text x="90" y="20" fill="black">У</text>  
+            <text x="90" y="245" fill="black">1</text>
+            <text x="90" y="180" fill="black">2</text>
+            <text x="90" y="115" fill="black">3</text>
+            <text x="160" y="320" fill="black">1</text>
+            <text x="220" y="320" fill="black">2</text>
+            <text x="280" y="320" fill="black">3</text>
+            <text x="340" y="320" fill="black">4</text>
+            <text x="400" y="320" fill="black">5</text> 
+            <text x="85" y="375" fill="black">-1</text>
+            <text x="85" y="440" fill="black">-2</text>
+            <rect x="100" y="175" width="60" height="60" fill="blue">
+                <animate attributeName="fill" values="perpule;green;yellow;red" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <rect x="100" y="355" width="60" height="60" fill="dark"></rect>
+            <rect x="160" y="115" width="60" height="60" fill="dark">
+                <animate attributeName="x" values="160;200;160" dur="3s" repeatCount="indefinite"/>
+            </rect>
+            <circle cx="223" cy="237" r="63" fill="dark">
+                <animate attributeName="r" values="63;30;63" dur="3s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="347" cy="237" r="63" fill="dark">
+                <animateTransform attributeName="transform" type="skewX" values="0;20;0" dur="3s" repeatCount="indefinite" />
+            </circle>
+            <rect x="350" y="115" width="60" height="60" fill="dark">
+                <animate attributeName="x" values="350;300;350" dur="3s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="410" y="175" width="60" height="60" fill="dark">
+                <animate attributeName="fill" values="perpule;green;yellow;red" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <ellipse cx="283" cy="360" rx="123" ry="60" fill="red">
+                
+            </ellipse> 
+            <rect x="406" y="355" width="60" height="60" fill="dark">
+                <!--Обертання-->
+                <animateTransform attributeName="transform" type="rotate" values="0;360" dur="5s" repeatCount="indefinite" />
+            </rect>
+            <rect  x="207" y="420" width="150" height="70" fill="dark" >
+                <animateTransform attributeName="transform" type="rotate" from="0 250 450" to="360 250 450" dur="4s" repeatCount="indefinite"/>
+            </rect>
+
+            <!-- <text>
+                <textPath xlink:href="#curve" fill="black">Текст по кривій</textPath>
+            </text>
+            <path id="curve" d="M100 300 Q 300 50, 500 300" fill="transparent" /> -->
+            </svg>
+    </svg>
+</body>
+</html>
